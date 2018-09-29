@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: zuul
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: CONFIG
+#zuul:
+# sensitive-headers:设置全局敏感头为null 全部服务都可携带cookie时可用
+#  routes:
+#  #写法1
+#    #随意定义的名称
+#    myProduct:
+#      #访问路径
+#      path: /myProduct/**
+#      #指向的服务
+#      serviceId: product
+#      #相关敏感信息配置 让cookie传递到服务 默认不传递 设置为null后会传递
+#      #sensitiveHeaders:
+#  #写法2 简洁写法
+##    product: /myProduct/**
+#
+#  #用正则匹配禁止外部访问
+#  ignored-patterns:
+##    - /myProduct/product/list
+##    - /product/product/list
+#
+##或者 - /**/product/list

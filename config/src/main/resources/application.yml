@@ -1,0 +1,39 @@
+spring:
+#    开启消息跟踪
+  rabbitmq:
+    host: 192.168.67.141
+    port: 5672
+#    默认密码  guest
+#    username: admin
+#    password: 123456
+
+  application:
+    name: config
+  cloud:
+    bus:
+      trace:
+        enabled: true
+    config:
+      label: master
+      server:
+        git:
+          uri: https://gitee.com/xiaozhangqing/config-repo
+          #uri: https://github.com/niyingla/repo
+          username: 1047984367@qq.com
+          password: as1314520
+          #ָ��git����Ŀ¼  ��Ҫ���õ���ǰ��Ŀ�� ��Ȼ�ᱻ���
+          basedir: /StudyWork/work/my-springCluod-sell/config/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# 刷新时，关闭安全验证
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#server:
+#  port: 8888

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: product
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: CONFIG
+  zipkin:
+    base-url: http://192.168.67.141:9411/
+  sleuth:
+    sampler:
+      probability: 1
+logging:
+  level:
+    com: debug

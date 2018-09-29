@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: order
+    #给消息分组  同一组内消息 只消费一次 否则会被多次消费
+  cloud:
+    stream:
+      bindings:
+      #定义的消息的名字
+        yourMessage:
+          #所属的组
+          group: order
+          #指定内容的传输格式 这样在mq管理页面中 看到的不是base64 而是内容
+          content-type: application/json
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: CONFIG
+        #zipkin地址
+  zipkin:
+    base-url: http://192.168.67.141:9411/
+    #抽样百分比 默认百分之十
+  sleuth:
+    sampler:
+      probability: 1
+
+feign:
+  hystrix:
+    enabled: true
+
+    #貌似无效
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+
+logging:
+  level:
+    com: debug
