@@ -27,7 +27,7 @@ public class StreamReceiver {
 */
     /**直接接受对象 它会自动转换
      * @param resultvo
-  /*   *//*
+  /*
     @StreamListener(StreamClient.input)
     public void process(ResultVO resultvo) {
         log.info("resultVo:{}", resultvo);
