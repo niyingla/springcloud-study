@@ -4,8 +4,6 @@ spring:
     host: 134.175.5.236
     port: 5672
 #    默认密码  guest
-#    username: admin
-#    password: 123456
 
   application:
     name: config
@@ -21,7 +19,6 @@ spring:
           #uri: https://github.com/niyingla/repo
           username: 1047984367@qq.com
           password: as1314520
-          #ָ��git����Ŀ¼  ��Ҫ���õ���ǰ��Ŀ�� ��Ȼ�ᱻ���
           basedir: /work/springcloud-study/config/basedir
 eureka:
   client:
