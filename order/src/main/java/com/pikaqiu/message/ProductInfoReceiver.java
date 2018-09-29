@@ -21,7 +21,6 @@ public class ProductInfoReceiver {
 
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
-/*
 
     @RabbitListener(queuesToDeclare = @Queue("productInfo"))
     public void process(String message) {
@@ -33,6 +32,5 @@ public class ProductInfoReceiver {
 
         stringRedisTemplate.opsForValue().set(String.format(ProductInfoReceiver.PRODUCT_STOCK_TEMPLATE, productInfo.getProductId()), productInfo.getProductStock() + "");
     }
-*/
 
 }
