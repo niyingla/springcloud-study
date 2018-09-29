@@ -22,7 +22,7 @@ spring:
           username: 1047984367@qq.com
           password: as1314520
           #ָ��git����Ŀ¼  ��Ҫ���õ���ǰ��Ŀ�� ��Ȼ�ᱻ���
-          basedir: /StudyWork/work/my-springCluod-sell/config/basedir
+          basedir: /work/springcloud-study/config/basedir
 eureka:
   client:
     service-url:
