@@ -32,7 +32,7 @@ public class CorsConfig {
         //允许的请求方法  get post
         configuration.setAllowedMethods(Arrays.asList("*"));
         //这个时间段里 相同的跨域请求不再检查
-        configuration.setMaxAge(300l);
+        configuration.setMaxAge(300L);
         //设置到基本路径源中               有效路径
         source.registerCorsConfiguration("/**", configuration);
 
