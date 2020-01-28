@@ -17,13 +17,13 @@ import java.util.UUID;
  * Created by Administrator on 2018/6/17.
  */
 @Component
-public class OrderMasterRepositoryTest extends OrderApplicationTests{
+public class OrderMasterRepositoryTest extends OrderApplicationTests {
 
     @Autowired
     private OrderMasterRepository orderMasterRepository;
 
     @Test
-    public void testSave(){
+    public void testSave() {
         OrderMaster orderMaster = new OrderMaster();
 
         orderMaster.setOrderId("451242424");

@@ -13,6 +13,7 @@ public class HystrixConfig {
     /**
      * 纠正访问hystrix的路径
      * 让他请求到指定servlet
+     *
      * @return
      */
     @Bean

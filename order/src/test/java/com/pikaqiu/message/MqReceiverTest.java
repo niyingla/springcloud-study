@@ -27,11 +27,11 @@ public class MqReceiverTest extends OrderApplicationTests {
 
     @Test
     public void sendGirl() {
-        amqpTemplate.convertAndSend("youExchange","pikaqiu", "now  你的 " + new Date());
+        amqpTemplate.convertAndSend("youExchange", "pikaqiu", "now  你的 " + new Date());
     }
 
     @Test
     public void sendGirl1() {
-        amqpTemplate.convertAndSend("myExchange","xiaozhangqing", "now  我的 " + new Date());
+        amqpTemplate.convertAndSend("myExchange", "xiaozhangqing", "now  我的 " + new Date());
     }
 }

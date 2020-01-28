@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
  * Created by Administrator on 2018/6/17.
  */
 @Component
-public class CategoryServiceImplTest extends ProductApplicationTests{
+public class CategoryServiceImplTest extends ProductApplicationTests {
 
     @Autowired
     private CategoryService categoryService;

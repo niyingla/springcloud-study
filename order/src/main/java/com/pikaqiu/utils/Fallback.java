@@ -11,7 +11,7 @@ import java.util.List;
  * Created by Administrator on 2018/7/21.
  */
 @Component
-public class Fallback implements ProductClient{
+public class Fallback implements ProductClient {
     @Override
     public List<ProductInfo> listForOrder(List<String> productIdList) {
         System.out.println("feign fallback");

@@ -18,10 +18,10 @@ public class ZuulConfig {
      * 动态引用参数
      * 自动刷新
      * 这里未完成
-     * */
+     */
     @ConfigurationProperties("zuul")
     @RefreshScope
-    public ZuulProperties zuulProperties(){
+    public ZuulProperties zuulProperties() {
         return new ZuulProperties();
     }
 }

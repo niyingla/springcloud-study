@@ -25,7 +25,7 @@ public class RateLimiterFilter extends ZuulFilter {
     @Override
     public int filterOrder() {
         //官方推荐写法 令牌应该放在最前
-        return SERVLET_DETECTION_FILTER_ORDER -1 ;
+        return SERVLET_DETECTION_FILTER_ORDER - 1;
     }
 
     @Override
@@ -37,7 +37,7 @@ public class RateLimiterFilter extends ZuulFilter {
     @Override
     public Object run() throws ZuulException {
         //尝试获取令牌
-        if(!RATE_LIMITER.tryAcquire()){
+        if (!RATE_LIMITER.tryAcquire()) {
             throw new RateLimiterException();
         }
 

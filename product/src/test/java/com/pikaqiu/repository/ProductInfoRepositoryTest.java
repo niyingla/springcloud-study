@@ -28,6 +28,7 @@ public class ProductInfoRepositoryTest {
         System.out.println(byProductStatus.size() > 0);
 
     }
+
     @Test
     public void findByProductIdIn() throws Exception {
         List<String> list = Arrays.asList("157875227953464068");

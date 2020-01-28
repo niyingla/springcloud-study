@@ -1,9 +1,9 @@
 spring:
-#    开启消息跟踪
+  #    开启消息跟踪
   rabbitmq:
     host: 134.175.5.236
     port: 5672
-#    默认密码  guest
+  #    默认密码  guest
 
   application:
     name: config
@@ -18,7 +18,7 @@ spring:
           uri: https://gitee.com/xiaozhangqing/config-repo
           #uri: https://github.com/niyingla/repo
           username: 1047984367@qq.com
-          password: as1314520
+          password: As.1314520
           basedir: /work/springcloud-study/config/basedir
 eureka:
   client:

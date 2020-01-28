@@ -24,7 +24,7 @@ public class ClientController {
     private ProductClient productClient;
 
     @GetMapping("/getProductList")
-    public String getProductList(){
+    public String getProductList() {
 
         List<String> list = Arrays.asList("157875227953464068");
 
@@ -34,8 +34,9 @@ public class ClientController {
 
         return "ok";
     }
+
     @GetMapping("/decreaseStock")
-    public String decreaseStock(){
+    public String decreaseStock() {
         List<CartDTO> list = new ArrayList<>();
 
         CartDTO cartDTO = new CartDTO();

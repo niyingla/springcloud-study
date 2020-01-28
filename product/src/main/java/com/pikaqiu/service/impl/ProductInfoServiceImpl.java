@@ -93,7 +93,6 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     public List<ProductInfo> decreaseStockProcess(List<CartDTO> list) {
 
 
-
         List<ProductInfo> ProductInfoList = new ArrayList<>();
 
         for (CartDTO cartDTO : list) {

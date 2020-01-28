@@ -27,12 +27,12 @@ public class MqReceiver {
     }
 
     //第三种方式 Exchange 和 Queue绑定
-    @RabbitListener(bindings = @QueueBinding( value = @Queue("myQueue") ,key = "xiaozhangqing",exchange = @Exchange("myExchange")))
+    @RabbitListener(bindings = @QueueBinding(value = @Queue("myQueue"), key = "xiaozhangqing", exchange = @Exchange("myExchange")))
     public void myReceiver(String message) {
         log.info("myExchange:{}", message);
     }
 
-    @RabbitListener(bindings = @QueueBinding( value = @Queue("myQueue") ,key = "pikaqiu",exchange = @Exchange("youExchange")))
+    @RabbitListener(bindings = @QueueBinding(value = @Queue("myQueue"), key = "pikaqiu", exchange = @Exchange("youExchange")))
     public void youReceiver(String message) {
         log.info("youExchange:{}", message);
     }

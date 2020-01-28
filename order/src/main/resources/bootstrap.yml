@@ -5,7 +5,7 @@ spring:
   cloud:
     stream:
       bindings:
-      #定义的消息的名字
+        #定义的消息的名字
         yourMessage:
           #所属的组
           group: order

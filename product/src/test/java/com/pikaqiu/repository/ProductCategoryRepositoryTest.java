@@ -21,6 +21,7 @@ import static org.junit.Assert.*;
 public class ProductCategoryRepositoryTest {
     @Autowired
     ProductCategoryRepository ProductCategoryRepository;
+
     @Test
     public void findByCategoryTypeIn() throws Exception {
         List<ProductCategory> byCategoryTypeIn = ProductCategoryRepository.findByCategoryTypeIn(Arrays.asList(11, 12));

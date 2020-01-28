@@ -8,7 +8,7 @@ import lombok.Getter;
 @Getter
 public enum PayStatusEnum {
 
-    NEW(0,"未支付"), FINISHED(1, "支付完成"), CANCEL(2, "取消支付");
+    NEW(0, "未支付"), FINISHED(1, "支付完成"), CANCEL(2, "取消支付");
 
     private Integer code;
     private String message;
