@@ -38,7 +38,6 @@ public class SendMessageController {
         ResultVO resultVO = new ResultVO();
         resultVO.setMsg("哈哈");
         resultVO.setCode(111);
-        //streamClient.output().send(MessageBuilder.withPayload(resultVO).build());
         streamClient.output().send(MessageBuilder.withPayload(resultVO).build());
     }
 }
